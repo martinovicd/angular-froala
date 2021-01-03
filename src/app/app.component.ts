@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-froala';
+  public options = {
+    events:{
+      initialized(){
+        console.log('Hello Froala!')
+      }
+    }
+  }
 }
